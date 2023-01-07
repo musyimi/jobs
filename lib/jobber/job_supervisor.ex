@@ -7,7 +7,7 @@ defmodule Jobber.JobSupervisor do
 
   def init(args) do
     children = [
-      {Jobber.JOb, args}
+      {Jobber.Job, args}
     ]
     options = [
       startegy: :one_for_one,
